@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .home{
     margin: 10px;
     margin-left: 0px;
@@ -38,4 +39,46 @@
 #links{
     transition: color 0.2s;
     cursor:pointer;
+=======
+.home{
+    margin: 10px;
+    margin-left: 0px;
+}
+
+.about{
+    margin: 10px;
+
+}
+
+.skills{
+    margin: 10px;
+
+}
+
+.experience{
+    margin: 10px;
+
+}
+
+.projects{
+    margin: 10px;
+}
+
+.contacts{
+    margin: 10px;
+    margin-right: 0px;
+}
+
+#links{
+    color: rgb(61, 61, 61);
+}
+
+#links:hover{
+    color:rgb(0, 0, 0)
+}
+
+#links{
+    transition: color 0.2s;
+    cursor:pointer;
+>>>>>>> b5bc9fb (Intial commit)
 }

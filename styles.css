@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html {
     scroll-behavior: smooth;
 }
@@ -679,3 +680,686 @@ form button:hover {
         font-size: 15px;
     }
 }
+=======
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background: radial-gradient(circle at top, #d1c6ff, #fde2e4, #f9f9f9);
+    height: 100vh;
+    margin: 20px;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+h2{
+    font-family: "Prompt", serif;
+    font-weight: 500;
+    font-style: normal;    
+}
+
+h3{
+    font-family: "Prompt", serif;
+    font-weight: 500;
+    font-style: normal;    
+}
+
+h4{
+    font-family: "Prompt", serif;
+    font-weight: 500;
+    font-style: normal;    
+}
+
+p{
+    font-family: "Prompt", serif;
+    font-style: normal;    
+}
+
+label{
+    font-family: "Prompt", serif;
+    font-style: normal;    
+}
+
+button{
+    font-family: "Prompt", serif;
+    font-style: normal;    
+}
+input{
+    font-family: "Prompt", serif;
+    font-style: normal;    
+}
+
+textarea{
+    font-family: "Prompt", serif;
+    font-style: normal;    
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(19, 20, 41);
+    font-family: "Prompt", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    background-color:rgb(235, 234, 234) ;
+    border-radius: 100px;
+    vertical-align: bottom;
+    width: 500px;
+    transition: width 0.2s;
+    opacity: 70%;
+    box-shadow: 0px 0px 15px -8px;
+}
+
+:hover.header{
+    width: 530px;
+}
+
+.topbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    left:0%;
+    right:0%;
+    top:0;
+    z-index: 9999;
+
+     
+}
+
+.contents{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-items: center;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 140px;
+}
+
+.image{
+    margin-right: 100px;
+    
+}
+
+.info{
+    font-family: "Prompt", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.information{
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.details{
+    font-family: "Prompt";
+    font-weight: 300;
+    font-style: normal;
+    width: 400px;
+    text-align: center;
+    color: rgb(63, 63, 63);
+}
+
+.pfp{
+    width: 260px;
+    border-radius: 400px;
+    outline: 5px solid rgb(255, 255, 255);
+    background: radial-gradient(circle, #e8e3ff, #fde2e4);
+
+}
+
+.linkedin{
+    width:20px;
+    background-color: black;
+    padding: 5px;
+    border-radius: 3px;
+    border: 0px;
+    margin-left: 150px;
+}
+
+.github{
+    width:20px;
+    background-color: black;
+    padding: 5px;
+    border-radius: 3px;
+    border: 0px;
+}
+
+.aboutme{
+    margin-top:159px;
+    text-align: center;
+    justify-items: center;
+    padding-top: 50px;
+}
+
+.aboutline{
+    font-family: "Prompt", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    width: 500px;
+    text-align: center;
+}
+
+.experiences{
+    margin-top:150px;
+    text-align: center;
+    justify-items: center;
+    padding-top: 50px;
+
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Vertical Line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background: #ccc;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Timeline Item */
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+}
+
+/* Positioning Left & Right */
+.timeline-item.left {
+    right:5%;
+    text-align: right;
+}
+
+.timeline-item.right {
+    left: 48%;
+}
+
+/* Translucent Timeline Boxes */
+.timeline-box {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    width: 80%;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    border: 2px;
+    overflow: hidden; /* Ensures ::before does not overflow */
+}
+
+/* Background Effect (Prevents Text Blurring) */
+.timeline-box::before {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(238, 238, 238, 0.5); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    z-index: -1; /* Places background behind text */
+}
+/* Hover Effect */
+.timeline-box:hover {
+    transform: scale(1.05);
+}
+
+.skillset{
+    margin-top: 120px;
+    padding-top: 50px;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}
+
+.skillimgs{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 950px;
+    gap:30px;
+    justify-content: center;
+}
+
+.skillimg{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+    justify-content: center;
+}
+
+.skillicons{
+    height:70px;
+}
+
+.projectslist{
+    margin-top: 100px;
+    padding-top: 50px;
+    justify-items: center;
+}
+
+.projectscol{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.projectitems{
+    display: flex;
+    flex-direction: row;
+    width: 1100px;
+    gap:100px;
+    justify-content: center;
+}
+
+.project1{
+    position: relative;
+    height:300px;
+    width:500px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+.project1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: -5%;
+    width: 0%; /* Always starts as half */
+    height: 100%;
+    background: rgb(59, 66, 83);
+    transition: width 0.2s ease-in-out,opacity 0.2s ease-in-out;
+    z-index: -1;
+    opacity: 0.7;  /* Keeps it behind the text */
+}
+
+.project1:hover::before {
+    width: 105%;
+    opacity: 1; /* Expands to cover full background */
+}
+
+
+.project1:hover {
+    color:white;
+    /*transform: scale(1.05);*/
+}
+
+.projectdetails{
+    padding-top: 20px;
+}
+
+.projectname{
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.projectdescrip{
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.techspecflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.techspec{
+    font-size: 11px;
+    display: inline;
+    margin: 5px;
+    margin-top: 0;
+    color: white;
+    border: 1px solid rgb(59, 66, 83);
+    background-color: rgb(59, 66, 83);
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.project1:hover .techspec{
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+
+.doosan{
+    width: 200px;
+    height: 200px;
+    transform: translateY(25%) ;
+
+}
+
+.train{
+    margin-top: 50px;
+    width: 50%;
+    height: 50%;
+       
+}
+
+.pluto{
+    margin-top: 20px;
+    width: 80%;
+    height: 80%;
+       
+}
+
+.hemv{
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    transform: translateY(12%);
+}
+
+.portfolioweb{
+    width: 90%;
+    height: 90%;
+    transform: translateY(5%);
+    border-radius: 10px;
+}
+
+.contactme {
+    text-align: center;
+    padding: 50px 20px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    transition: scale 0.3s;
+}
+
+.contact-container:hover{
+    scale: 1.05;
+}
+
+form {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 100px;
+    resize: none;
+}
+
+form button {
+    background: rgb(59, 66, 83);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: rgb(26, 29, 36);
+}
+
+/* Contact Details */
+.contact-info {
+    margin-top: 30px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 0;
+    }
+
+    .timeline-item.right {
+        left: 0;
+        text-align: left;
+    }
+}
+
+/* General Responsive Settings */
+@media screen and (max-width: 1200px) {
+    .projectitems {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .project1 {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .techspec {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .doosan, .train, .pluto, .hemv, .portfolioweb{
+        width: 50%;
+        height: auto;
+    }
+
+    .doosan{
+        transform: translateY(0%);
+    }
+
+    .dispenser{
+        height: 300px;
+        width: 200px;
+    }
+}
+
+/* Tablet View */
+@media screen and (max-width: 992px) {
+    .header {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+    }
+
+    .image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .aboutme {
+        width: 90%;
+        margin: auto;
+        padding-top: 30px;
+    }
+
+    .skillimgs {
+        width: 90%;
+    }
+
+    .projectitems {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .project1 {
+        width: 90%;
+    }
+
+    form {
+        width: 400px;
+    }
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 13px;
+    }
+
+    .topbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contents {
+        margin-top: 70px;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    .details {
+        width: 90%;
+    }
+
+    .timeline::before {
+        left: 10px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .timeline-item.right {
+        left: 0;
+        text-align: left;
+    }
+
+    .skillimgs {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .project1 {
+        width: 95%;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .contact-info {
+        max-width: 100%;
+    }
+}
+
+/* Extra Small Screens */
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    .aboutline {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .techspec {
+        font-size: 10px;
+    }
+
+    .project1 {
+        padding: 15px;
+    }
+
+    .contact-container {
+        padding: 20px;
+    }
+
+    label{
+        font-size: 15px;
+    }
+}
+>>>>>>> b5bc9fb (Intial commit)
