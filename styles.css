@@ -148,9 +148,13 @@ textarea{
 .pfp{
     width: 260px;
     border-radius: 50%;
-    outline: 5px solid rgb(255, 255, 255);
+    border: 5px solid rgb(255, 255, 255);
     object-fit: cover;
 
+}
+
+.image{
+    border-radius: 60%;
 }
 
 .linkedin{
@@ -761,8 +765,6 @@ form button:hover {
 
 @media screen and (max-width: 768px) {
     .pfp {
-        width: 120px;  /* Adjust size for mobile */
-        height: 120px;
         border-radius: 50%; /* Keeps the border fully round */
     }
 }
