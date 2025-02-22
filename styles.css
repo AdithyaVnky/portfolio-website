@@ -150,6 +150,7 @@ textarea{
     border-radius: 400px;
     outline: 5px solid rgb(255, 255, 255);
     background: radial-gradient(circle, #e8e3ff, #fde2e4);
+    object-fit: cover;
 
 }
 
@@ -709,6 +710,10 @@ form button:hover {
 }
 
 @media screen and (max-width: 768px) {
+    .pfp{
+        border-radius: 50%;
+    }
+
     .header {
         justify-content: flex-end;
         padding: 10px;
