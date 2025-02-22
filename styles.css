@@ -1,4 +1,3 @@
-
 html {
     scroll-behavior: smooth;
 }
@@ -80,6 +79,11 @@ textarea{
     width: 530px;
 }
 
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
 .topbar{
     display: flex;
     flex-direction: row;
@@ -91,6 +95,13 @@ textarea{
     z-index: 9999;
 
      
+}
+
+.menu-icon {
+    display: none; /* Hide by default */
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
 }
 
 .contents{
@@ -631,8 +642,20 @@ form button:hover {
     }
 
     .skillimgs {
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
+    }
+
+    .skillimg{
+        flex-direction: column;
+        width:100%;
+        gap: 20px;
+        justify-content: start;
+    }
+
+    .skillicons{
+        width:50%;
+        height: auto;
     }
 
     .project1 {
@@ -680,3 +703,52 @@ form button:hover {
         font-size: 15px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .header {
+        justify-content: space-between;
+        padding: 10px;
+        width: 50px;
+    }
+
+    /* Show Hamburger Menu Icon */
+    .menu-icon {
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 10px;
+        background-color: rgb(235, 234, 234) ;
+    }
+
+    .header:hover{
+        width:50px;
+    }
+
+    /* Hide Navigation Links by Default on Small Screens */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background: rgba(19, 20, 41, 0.9);
+        text-align: center;
+        padding: 10px 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Show Menu When Active */
+    .nav-links.active {
+        display: flex;
+        background-color: rgb(235, 234, 234);
+        width:200px;
+        border-radius: 10px;
+    }
+
+    .nav-links div {
+        padding: 10px;
+         color: white;
+    }
+}
+

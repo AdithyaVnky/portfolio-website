@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
 
@@ -35,4 +34,13 @@ document.addEventListener("DOMContentLoaded", function () {
     function isValidEmail(email) {
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     }
+
+    // ✅ Hamburger Menu Toggle Function
+    function toggleMenu() {
+        let menu = document.querySelector(".nav-links");
+        menu.classList.toggle("active");
+    }
+
+    // ✅ Attach toggleMenu function to the menu icon
+    document.querySelector(".menu-icon").addEventListener("click", toggleMenu);
 });
