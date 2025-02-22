@@ -147,9 +147,8 @@ textarea{
 
 .pfp{
     width: 260px;
-    border-radius: 400px;
+    border-radius: 50%;
     outline: 5px solid rgb(255, 255, 255);
-    background: radial-gradient(circle, #e8e3ff, #fde2e4);
     object-fit: cover;
 
 }
@@ -710,9 +709,6 @@ form button:hover {
 }
 
 @media screen and (max-width: 768px) {
-    .pfp{
-        border-radius: 50%;
-    }
 
     .header {
         justify-content: flex-end;
@@ -760,6 +756,14 @@ form button:hover {
     .nav-links div {
         padding: 10px;
          color: white;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pfp {
+        width: 120px;  /* Adjust size for mobile */
+        height: 120px;
+        border-radius: 50%; /* Keeps the border fully round */
     }
 }
 
