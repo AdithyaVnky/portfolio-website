@@ -677,6 +677,7 @@ form button:hover {
 
     form {
         width: 100%;
+        transform: translateX(-10%);
     }
 
     .contact-info {
