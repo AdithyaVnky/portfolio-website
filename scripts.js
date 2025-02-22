@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
+    const menuIcon = document.querySelector(".menu-icon");
+    const menu = document.querySelector(".nav-links");
+    const menuLinks = document.querySelectorAll(".nav-links a"); // Select all menu links
 
+    // ✅ Contact Form Submission Handling
     form.addEventListener("submit", function (event) {
         event.preventDefault(); // Prevent actual form submission
 
@@ -30,17 +34,30 @@ document.addEventListener("DOMContentLoaded", function () {
         form.reset();
     });
 
-    // Email validation function
+    // ✅ Email Validation Function
     function isValidEmail(email) {
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     }
 
     // ✅ Hamburger Menu Toggle Function
     function toggleMenu() {
-        let menu = document.querySelector(".nav-links");
         menu.classList.toggle("active");
     }
 
-    // ✅ Attach toggleMenu function to the menu icon
-    document.querySelector(".menu-icon").addEventListener("click", toggleMenu);
+    // Toggle menu when clicking the hamburger icon
+    menuIcon.addEventListener("click", toggleMenu);
+
+    // Close the menu when clicking a link inside it
+    menuLinks.forEach(link => {
+        link.addEventListener("click", function () {
+            menu.classList.remove("active");
+        });
+    });
+
+    // Close the menu when clicking outside of it
+    document.addEventListener("click", function (event) {
+        if (!menu.contains(event.target) && !menuIcon.contains(event.target)) {
+            menu.classList.remove("active");
+        }
+    });
 });
