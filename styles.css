@@ -715,7 +715,7 @@ form button:hover {
 
 @media screen and (max-width: 768px) {
     .body{
-        background: radial-gradient(circle at top, #d1c6ff 15%, #fde2e4 35%, #f9f9f9 50%) 
+        background: radial-gradient(circle at top, rgb(209, 198, 255) 15%, rgb(253, 226, 228) 35%, rgb(249, 249, 249)) 
     }
 
     .header {
@@ -770,6 +770,11 @@ form button:hover {
 @media screen and (max-width: 768px) {
     .pfp {
         border-radius: 50%; /* Keeps the border fully round */
+    }
+
+    .projecthead{
+        display: inline;
+        text-align: center;
     }
 }
 
