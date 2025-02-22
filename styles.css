@@ -714,6 +714,9 @@ form button:hover {
 }
 
 @media screen and (max-width: 768px) {
+    .body{
+        background: radial-gradient(circle at top, #d1c6ff 15%, #fde2e4 35%, #f9f9f9 50%) 
+    }
 
     .header {
         justify-content: flex-end;
